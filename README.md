@@ -1,5 +1,21 @@
 # python_course
-learn python
+
+### 1.安装python
++ ☑️add python xx to PATH
+
++ 命令简写
+  + echo 'alias python="python3"' >> .bash_profile
+
++ linux有个默认的老版本python
+  + rm -f /usr/bin/python
+  + ln -s /usr/local/python3.10.4/bin/python3.10 /usr/bin/python
+  + vim /usr/libexec/urlgrabber-ext-down
+    + 首行改成 /usr/bin/python2
+  + vim /usr/bin/yum
+    + 首行改成 /usr/bin/python2
+
+### 2.解释器
+
 
 
 + 函数的说明文档
@@ -26,10 +42,26 @@ learn python
       print(b)
   ```
 
++ 三元表达式
+  > res = 条件成立时返回的值 if 条件 else 条件不成立时返回的值
+
++ 列表生成式（列表推导式）
+  > [表达式 for 迭代变量 in 可迭代对象 [if 条件表达式] ]
+
+  > egg_list=['鸡蛋%s' %i for i in range(10)]
++ 集合推导式
+  > formula = {str2 for str2 in str1 if len(str2) >= 4}
++ 字典推导式
+  > formula = {key: value for key, value in dict1.items() if key == 'name'}
+ 
++ 生成器表达式
+  > (expression for item in iterable if condition)
+  
+  + 与列表生成式的语法格式相同，只需要将[ ]换成( )
 
 
-
-
++ mysql
+  + pip install pymysql cryptography
 
 
 参考引用：
