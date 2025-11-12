@@ -15,7 +15,7 @@
     + 首行改成 /usr/bin/python2
 
 ### 2.解释器
-
++ python.exe
 
 
 + 函数的说明文档
