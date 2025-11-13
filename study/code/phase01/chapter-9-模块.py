@@ -4,9 +4,9 @@
 
 常用组合形式：
 import 模块名
-from 模块名 import 类、变量、方法等
-from 模块名 import *
 import 模块名 as 别名
+from 模块名 import *
+from 模块名 import 类、变量、方法等
 from 模块名 import 功能名 as 别名
 """
 
