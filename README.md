@@ -68,3 +68,4 @@
 + 1 .[Python-100-Days](https://github.com/jackfrued/Python-100-Days/tree/master)
 + 2 .[PythonScraping](https://github.com/Santostang/PythonScraping)
 + 3 .[examples-of-web-crawlers](https://github.com/shengqiangzhang/examples-of-web-crawlers)
++ 4 .[视频](https://www.bilibili.com/video/BV1qW4y1a7fU?spm_id_from=333.788.player.switch&vd_source=26a4c9cd3b93c3c6110a2ce9403ca5ea&p=17)
