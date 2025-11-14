@@ -1,3 +1,5 @@
+import random
+
 """
 字面量
 [e1, e2, e3, e4, ...]
@@ -81,3 +83,15 @@ print()
 
 for e in name_list:
     print(e, end=" ")
+print()
+
+r_list = [random.randint(50, 200) for _ in range(12)]
+print(r_list)
+
+# 列表排序  lambda x, y: x + y
+r_list.sort(key=lambda x: x, reverse=False)
+print(r_list)
+
+n_list = [["a", 34], ["b", 43], ["c", 21]]
+n_list.sort(key=lambda element: element[1], reverse=False)
+print(n_list)
