@@ -34,6 +34,6 @@ for_fun(f)
 f.close()
 
 # with open 会自动关闭文件
-with  open("chapter-8-读文件.py", "r", encoding="UTF-8") as f:
+with open("chapter-8-读文件.py", "r", encoding="UTF-8") as f:
     for line in f:
         print(line)
