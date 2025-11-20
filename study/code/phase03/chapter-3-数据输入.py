@@ -17,6 +17,12 @@ conf = SparkConf().setMaster("local[*]").setAppName("test_py_spark_app")
 # 创建 SparkContext 类对象
 sc = SparkContext(conf=conf)
 
+"""
+RDD: 分布式弹性数据集
+    1.提供数据存储
+    2.提供数据计算的各类方法
+    3.数据计算的方法，返回值依旧是RDD（RDD迭代计算）
+"""
 ############## 普通python数据容器转 RDD
 rdd1 = sc.parallelize([1, 2, 3, 4, 5])
 rdd2 = sc.parallelize((1, 2, 3, 4, 5))
@@ -38,7 +44,7 @@ print(rdd4.collect())
 print(rdd5.collect())
 
 ############## 读取文件转 RDD
-rdd = sc.textFile("../../md/day1.md")
+rdd = sc.textFile("../../sample/rdd_file.txt")
 print(rdd.collect())
 
 sc.stop()
