@@ -14,10 +14,10 @@ def sleep():
     print("sleep ...")
     time.sleep(random.randint(1,5))
 
-# 使用方式
+# 使用方式一
 # fn = outer(sleep)
 # fn()
 
 
-
+# 使用方式二，用注解@outer，调用如下
 sleep()

@@ -4,7 +4,7 @@ from random import randint
 from time import time, sleep
 
 
-def download_task(filename):
+def download(filename):
     print('启动下载进程，进程号[%d].' % getpid())
     print('开始下载%s...' % filename)
     time_to_download = randint(5, 10)
@@ -14,9 +14,9 @@ def download_task(filename):
 
 def main():
     start = time()
-    p1 = Process(target=download_task, args=('Python从入门到住院.pdf', ))
+    p1 = Process(target=download, args=('Python从入门到住院.pdf', ))
     p1.start()
-    p2 = Process(target=download_task, args=('Peking Hot.avi', ))
+    p2 = Process(target=download, args=('Peking Hot.avi', ))
     p2.start()
     p1.join()
     p2.join()

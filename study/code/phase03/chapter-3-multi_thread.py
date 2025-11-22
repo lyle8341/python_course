@@ -3,7 +3,9 @@ from threading import Thread
 from time import time, sleep
 
 
+
 def download(filename):
+
     print('开始下载%s...' % filename)
     time_to_download = randint(5, 10)
     sleep(time_to_download)
@@ -19,7 +21,7 @@ def main():
     t1.join()
     t2.join()
     end = time()
-    print('总共耗费了%.3f秒' % (end - start))
+    print('总共耗费了%.3f秒.' % (end - start))
 
 
 if __name__ == '__main__':
